@@ -9,7 +9,6 @@ TEMP_THRESHOLD = 50.0  # temperature required to turn fan on in Celsius
 fan = OutputDevice(FAN_PIN)
 
 def get_cpu_temperature():
-    """Read the CPU temperature from the system."""
     with open("/sys/class/thermal/thermal_zone0/temp", "r") as f:
         temp = f.read()
     return int(temp) / 1000  # convert from millidegree to celsius
