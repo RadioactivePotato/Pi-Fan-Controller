@@ -1,4 +1,4 @@
-# Pi-Fan-Controller
+# Pi-Fan-Controller [NOT WORKING]
 
 Plug the red wire (positive) of the fan to GPIO pin 27 (Customizable on line 5)
 
